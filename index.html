@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NOCTURNE — Private Collection</title>
+  <meta name="description" content="Private digitale Sammlung im modernen Dark-Museum-Stil." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <span class="brand-dot"></span>
+      NOCTURNE COLLECTION
+    </a>
+    <nav>
+      <a href="#collection">Sammlung</a>
+      <a href="#about">Über</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Kontrast wechseln">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-orb orb-a"></div>
+      <div class="hero-orb orb-b"></div>
+
+      <div class="hero-copy reveal">
+        <p class="kicker">PRIVATE DIGITAL MUSEUM</p>
+        <h1>Objekte.<br><span>Geschichten.</span><br>Provenienz.</h1>
+        <p class="hero-text">
+          Eine kuratierte Sammlung persönlicher Objekte — mit Herkunft, Kontext,
+          Bedeutung und Geschichte.
+        </p>
+        <div class="hero-actions">
+          <a href="#collection" class="btn primary">Sammlung entdecken</a>
+          <a href="#about" class="btn ghost">Mehr erfahren</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="hero-card-glow"></div>
+        <div class="object-stage">
+          <div class="object-silhouette">
+            <span>DEIN OBJEKTFOTO</span>
+          </div>
+        </div>
+        <div class="hero-card-meta">
+          <span>FEATURED OBJECT</span>
+          <strong>Hunch Back</strong>
+          <small>Diné Sandpainting · vermutlich Ganaskidi</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats reveal">
+      <div><strong id="objectCount">03</strong><span>Objekte</span></div>
+      <div><strong>05</strong><span>Kategorien</span></div>
+      <div><strong>∞</strong><span>Erweiterbar</span></div>
+    </section>
+
+    <section id="collection" class="collection-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">COLLECTION</p>
+          <h2>Die Sammlung</h2>
+        </div>
+        <p>Durchsuche deine Sammlung wie in einem kleinen privaten Museum.</p>
+      </div>
+
+      <div class="toolbar reveal">
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="search" type="search" placeholder="Objekt, Herkunft, Epoche …">
+        </div>
+        <div class="chips" id="chips">
+          <button class="chip active" data-filter="all">Alle</button>
+          <button class="chip" data-filter="kultur">Kultur</button>
+          <button class="chip" data-filter="geschichte">Geschichte</button>
+          <button class="chip" data-filter="technik">Technik</button>
+          <button class="chip" data-filter="natur">Natur</button>
+          <button class="chip" data-filter="schmuck">Schmuck</button>
+        </div>
+      </div>
+
+      <div class="museum-grid" id="grid">
+
+        <article class="museum-card reveal" data-category="kultur" data-search="hunch back ganaskidi dine navajo sandpainting holy being">
+          <button class="card-click" data-open="ganaskidi" aria-label="Hunch Back öffnen"></button>
+          <div class="card-image image-a">
+            <div class="image-label">FOTO EINSETZEN</div>
+            <div class="card-index">01</div>
+          </div>
+          <div class="card-content">
+            <p class="card-category">DINÉ · SANDPAINTING</p>
+            <h3>Hunch Back</h3>
+            <p>Vermutlich Ganaskidi, der sogenannte „Hunchback Yei“.</p>
+            <span class="card-link">Objekt ansehen <b>↗</b></span>
+          </div>
+        </article>
+
+        <article class="museum-card reveal" data-category="technik" data-search="camaro felge rad motorsport automobil unfall">
+          <button class="card-click" data-open="camaro" aria-label="Camaro Objekt öffnen"></button>
+          <div class="card-image image-b">
+            <div class="image-label">FOTO EINSETZEN</div>
+            <div class="card-index">02</div>
+          </div>
+          <div class="card-content">
+            <p class="card-category">TECHNIK · MOTORSPORT</p>
+            <h3>Camaro Wheel</h3>
+            <p>Persönliches Erinnerungsstück mit eigener Geschichte und Provenienz.</p>
+            <span class="card-link">Objekt ansehen <b>↗</b></span>
+          </div>
+        </article>
+
+        <article class="museum-card reveal" data-category="geschichte" data-search="artefakt geschichte sammlung historisch">
+          <button class="card-click" data-open="artifact" aria-label="Historisches Objekt öffnen"></button>
+          <div class="card-image image-c">
+            <div class="image-label">FOTO EINSETZEN</div>
+            <div class="card-index">03</div>
+          </div>
+          <div class="card-content">
+            <p class="card-category">GESCHICHTE</p>
+            <h3>Historisches Objekt</h3>
+            <p>Platzhalter für ein weiteres Stück deiner privaten Sammlung.</p>
+            <span class="card-link">Objekt ansehen <b>↗</b></span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-panel reveal">
+        <div>
+          <p class="kicker">ABOUT THE COLLECTION</p>
+          <h2>Mehr als Dekoration.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Diese Seite ist als digitales Gegenstück zu deiner echten Sammlung gedacht:
+            Jedes Objekt kann eine eigene Detailseite mit Fotos, Herkunft, Datierung,
+            Materialien, Provenienz, Bedeutung, Quellen und QR-Code bekommen.
+          </p>
+          <p>
+            Das Design ist bewusst dunkel, ruhig und galeristisch — wie ein modernes
+            Museum nach Feierabend.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>NOCTURNE PRIVATE COLLECTION</span>
+    <span>CURATED ARCHIVE</span>
+  </footer>
+
+  <dialog id="modal">
+    <div class="modal-shell">
+      <button class="modal-close" aria-label="Schließen">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
